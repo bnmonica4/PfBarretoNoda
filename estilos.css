@@ -29,7 +29,7 @@ height: 60px;
     background-image: url(img/pexels-polina.jpg);
     background-position: center;
     background-size: cover;
-    height: 450px;
+    height: auto;
 }
 
 .jumbotron a:hover{
@@ -41,7 +41,7 @@ height: 60px;
     background-image: url(img/pexels-meraki-photos-5379467.jpg);
     background-position: center;
     background-size: cover;
-    height: 450px;
+    height: auto;
 }
 
 .jumbotron-recetas a:hover{
@@ -357,7 +357,7 @@ padding: 15px;
     color: palevioletred;
 }
 
-@media only screen and (min-width: 480) and (max-width: 1024px){
+@media only screen and (min-width: 420) and (max-width: 1024px){
     .navbar-collapse{
         display: flex;
         justify-content: center !important;
