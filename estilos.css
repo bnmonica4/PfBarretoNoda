@@ -259,7 +259,7 @@ footer a:hover{
 
 .galeria{
     display: grid;
-    height: 500px;
+    height: 625px;
     width:100%;
     background-color: white;
     grid-template-columns: repeat(4, 1fr);
