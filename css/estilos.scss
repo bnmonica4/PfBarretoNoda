@@ -66,7 +66,6 @@ height: 60px;
 
 h1{
     color: $color1;
-    text-shadow: 0 0 5px $color3;
     
 }
 
@@ -350,10 +349,12 @@ padding: 15px;
     font-size: 20px; 
 }
 
-.main-contacto{
+.main-form{
     color: $color1;
     padding: 10px;
 }
+
+
 
 @media only screen and (min-width: 420) and (max-width: 1024px){
     .navbar-collapse{

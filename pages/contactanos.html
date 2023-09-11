@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Puedes contactarnos a través de este formulario">
+    <meta name="keywords" content="formulario, contacto, redes sociales, recetas, aprender, postres">
     <!-- font awesome inicia -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font awesome fin -->
@@ -47,7 +49,7 @@
 <!-- Jumbotron inicia -->
 <div class="jumbotron-contactanos p-5 rounded">
         <h1>Contactanos</h1>
-<main class="main main-contacto">
+<main class="main-form">
     <form action="enviar.php" method="post" enctype="text/plain">
         <h3>Nombre</h3>
         <input type="text" placeholder="Escribe tu nombre"><br>
@@ -55,10 +57,10 @@
         <input type="text" placeholder="Escribe tu Apellido"><br>
         <h3>Email @</h3>
         <input type="email"><br>
-        <input type="date"><br>
-        <textarea name="areadetexto" id="" cols="30" rows="5" placeholder="Escribe tu comentario"></textarea><br>
+        <!-- <input type="date"><br> -->
+        <h3>Mensaje</h3>
+        <textarea name="areadetexto" id="" cols="30" rows="5" placeholder=""></textarea><br>
         <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar">
     </form>
 </main>
 </div>
