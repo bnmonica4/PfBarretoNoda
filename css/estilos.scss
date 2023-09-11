@@ -38,8 +38,7 @@ height: 60px;
 }
 
 .navbar a:hover{
-    color: $color1 !important;
-    background: #FFC4D6;
+    background-image: linear-gradient($color1, pink);
     border-radius: 5px;
 }
 
@@ -51,8 +50,7 @@ height: 60px;
 }
 
 .jumbotron a:hover{
-    color: $color1;
-    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient($color1, pink);
 }
 
 .jumbotron-recetas{
@@ -63,8 +61,7 @@ height: 60px;
 }
 
 .jumbotron-recetas a:hover{
-    color: $color1;
-    background: rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient($color1, pink);
 }
 
 h1{
@@ -185,8 +182,7 @@ h2{
 }
 
 .article a:hover{
-    color: $color1;
-    background: #FFC4D6;
+    background-image: linear-gradient($color1, pink);
 }
 
 footer{
@@ -228,7 +224,7 @@ footer a:hover{
 
 .what:hover{
     color: $color1;
-    background-color: #FFC4D6;
+    background-image: linear-gradient($color1, pink);
 }
 
 .subir{

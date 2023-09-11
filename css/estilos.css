@@ -24,8 +24,7 @@ html {
 }
 
 .navbar a:hover {
-  color: hotpink !important;
-  background: #FFC4D6;
+  background-image: linear-gradient(hotpink, pink);
   border-radius: 5px;
 }
 
@@ -37,8 +36,7 @@ html {
 }
 
 .jumbotron a:hover {
-  color: hotpink;
-  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(hotpink, pink);
 }
 
 .jumbotron-recetas {
@@ -49,8 +47,7 @@ html {
 }
 
 .jumbotron-recetas a:hover {
-  color: hotpink;
-  background: rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(hotpink, pink);
 }
 
 h1 {
@@ -190,8 +187,7 @@ h2 {
 }
 
 .article a:hover {
-  color: hotpink;
-  background: #FFC4D6;
+  background-image: linear-gradient(hotpink, pink);
 }
 
 footer {
@@ -233,7 +229,7 @@ footer a:hover {
 
 .what:hover {
   color: hotpink;
-  background-color: #FFC4D6;
+  background-image: linear-gradient(hotpink, pink);
 }
 
 .subir {
