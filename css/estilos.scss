@@ -23,6 +23,17 @@ html{
     scroll-behavior: smooth;
 }
 
+.logo{
+    float: left;
+    font-weight: bold;
+    color: $color2 !important; 
+    text-transform: uppercase;
+}
+
+.logo span{
+    color: $color2 !important;
+}
+
 .navbar{
     height: 80px;
     background-color: $color1;
