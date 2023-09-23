@@ -23,17 +23,6 @@ html{
     scroll-behavior: smooth;
 }
 
-.logo{
-    float: left;
-    font-weight: bold;
-    color: $color2 !important; 
-    text-transform: uppercase;
-}
-
-.logo span{
-    color: $color2 !important;
-}
-
 .navbar{
     height: 80px;
     background-color: $color1;
@@ -77,7 +66,6 @@ height: 60px;
 
 h1{
     color: $color1;
-    
 }
 
 .call {
@@ -120,7 +108,7 @@ h2{
 }
 
 .article{
-    border: 2px solid $color1;
+    border: 5px solid $color1;
     background-color: $color2;
     text-align: center;
     font-size: 20px;
@@ -204,7 +192,7 @@ footer{
     font-family: $font1;
 }
 
-.redes{
+footer .redes{
     color: $color1; 
     font-size: 50px;
     letter-spacing: 10px;
@@ -263,113 +251,245 @@ footer a:hover{
 }
 
 .galeria{
-    display: grid;
-    min-height: 625px;
-    width: $ancho1;
     background-color: $color2;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 200px);
-    grid-template-areas:"img1 img2 img3 img4"
-                        "img1 img5 img3 img8"
-                        "img6 img5 img7 img8";
-grid-gap: 5px;
-padding: 15px;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 200px);
+    grid-gap: 5px;
+    padding: 15px;
 }
 
 .item{
-    border: 4px solid $color1;
+    border: 5px solid $color1;
     background-size: cover;
     background-position: center;
 }
 
 .item1{
     background-image: url(../img/pexels-amanda-lim-8329235.jpg);
-    grid-area: img1;
 }
+
 .item2{
     background-image: url(../img/pexels-alex-koch-8504385.jpg);
-    grid-area: img2;
 }
+
 .item3{
-    background-image: url(../img/pexels-bethany-hicks-14576632.jpg);
-    grid-area: img3;
+    background-image: url(../img/pexels-leonardo-luz-15746809.jpg);
 }
+
 .item4{
     background-image: url(../img/pexels-suzy-hazelwood-1126359.jpg);
-    grid-area: img4;
 }
+
 .item5{
-    background-image: url(../img/pexels-valeria-boltneva-1282279.jpg);
-    grid-area: img5;
+    background-image: url(../img/pexels-ruslan-khmelevsky-8732729.jpg);
 }
+
 .item6{
     background-image: url(../img/pexels-nishant-aneja-2955816.jpg);
-    grid-area: img6;
 }
+
 .item7{
-    background-image: url(../img/pexels-mateusz-7190698.jpg);
-    grid-area: img7;
+    background-image: url(../img/pexels-aleworr-1011182.jpg);
 }
+
 .item8{
-    background-image: url(../img/pexels-tina-nord-1775285.jpg);
-    grid-area: img8;
+    background-image: url(../img/pexels-abhinav-goswami-291528.jpg);
 }
     
 @mixin sizes2{
     background-position: center;
     background-size: cover;
     height: 600px;
-    font-size: 50px;
 }
 
-.jumbotron-siguenos{
-    @include sizes2;
+.siguenos {
     background-image: url(../img/pexels-polina-5419099.jpg);
+    @include sizes2;
 }
 
-.redsocial{
-    color: $color1; 
-    font-size: 50px;
-}
-
-.redsocial a{
-    color: $color1;
-    border-radius: 5px;
-}
-
-.redsocial a:hover{
-    background-color: #FFC4D6;
-    color: $color1;
-}
-
-.redes-h1{
-    width: 50%;
-    text-shadow: 0 0 5px $color3, 0 0 5px $color3;
+.nright-siguenos h1{
+    margin: 15%;
+    text-align: center;
+    font-size: 45px;
     border: 5px solid $color1;
     border-radius: 10px;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.281);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 5px $color3, 0 0 5px $color3;
+}
+
+.nright-siguenos i{
+    color: $color2;
+    padding: 8px 8px;
+    background-image: linear-gradient($color1, pink);
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 5%;
+}
+
+.nright-siguenos h2{
+    color: $color2;
+    background-image: none;
+    text-shadow: 0 0 8px $color3, 0 0 8px $color3;
+    text-align: left;
+    font-size: 40px;
+}
+
+.nleft-siguenos {
+    margin-top: 10%;
     text-align: center;
-    background-size: cover;
-    font-family: $font1;
+}
+
+.redess a{
+    color: $color2;
+    background-color: $color1;
+    border-radius: 50%;
+    padding: 5px 15px;
+    background-image: linear-gradient($color1, pink);
+    margin: 20px 20px;
+    font-size: 50px;
+}
+
+.redess a:hover {
+    color: $color1;
 }
 
 .jumbotron-contactanos{
     @include sizes2;
     background-image: linear-gradient(to right bottom, rgba(255,255,255,0.2), rgba(255,255,255,0.6)), url(../img/pexels-polina.jpg);
-    font-size: 20px; 
+    height: 620px;
+    font-size: 50px;
 }
 
-.main-form{
+.contact{
     color: $color1;
-    padding: 10px;
+    font-size: 15px;
+    margin: 10px;
+    text-shadow: 0 0 4px $color3;
 }
 
+.controls {
+    width: 40%;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid $color1;
+    font-size: 15px;
+    
+}
 
+textarea#texto {
+    width: 40%;
+    border: 1px solid $color1;
+    padding: 5px;
+    resize: none;
+}
+.botons {
+    background-color: $color1;
+    color: $color2;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
 
-@media only screen and (min-width: 420) and (max-width: 1024px){
-    .navbar-collapse{
-        display: flex;
-        justify-content: center !important;
+.botons:hover{
+    background-image: linear-gradient($color1, pink);
+}
+
+.what-contact {
+    height: 40px;
+    width: 40px;
+    color: $color2 !important;
+    background-color: $color1;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    border-radius: 50%;
+    }
+
+    .what-contact:hover{
+        background-image: linear-gradient($color1, pink);
+    }
+
+/* comienzan las media queries */
+
+@media only screen and (min-width:320px)and (max-width: 480px){
+    .redess a{
+        font-size: 25px;
+    }
+    .nright-siguenos h2{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width: 768px){
+    .redess a{
+        font-size: 25px;
+    }
+    .nright-siguenos h2{
+        font-size: 30px;
+    }
+    .galeria{
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(4, 200px);
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 1024px){
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px);
+    }
+
+    .item1{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .item2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .item3{
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+
+    .item4{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+
+    .item5{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .item6{
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+
+    .item7{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .item8{
+        grid-column: 4/5;
+        grid-row: 2/4;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .galeria{ 
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 200px);
     }
 }
